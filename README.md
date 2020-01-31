@@ -9,7 +9,7 @@ This one actually works :)
 
 In your project root:
 
-`heroku buildpacks:add https://github.com/DuckyTeam/heroku-buildpack-imagemagick  --index 1 --app HEROKU_APP_NAME`
+`heroku buildpacks:add https://github.com/afmicc/heroku-buildpack-imagemagick --index 1 --app HEROKU_APP_NAME`
 
 "index 1" means that imagemagick will be installed first.
 

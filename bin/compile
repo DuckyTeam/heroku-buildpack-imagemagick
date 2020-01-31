@@ -10,7 +10,7 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 VENDOR_DIR="$BUILD_DIR/vendor"
 INSTALL_DIR="$VENDOR_DIR/imagemagick"
-IMAGE_MAGICK_VERSION="${IMAGE_MAGICK_VERSION:-7.0.5-10}"
+IMAGE_MAGICK_VERSION="${IMAGE_MAGICK_VERSION:-7.0.9-16}"
 CACHE_FILE="$CACHE_DIR/imagemagick-$IMAGE_MAGICK_VERSION.tar.gz"
 
 if [ ! -f $CACHE_FILE ]; then
@@ -72,8 +72,8 @@ EOF
 echo "-----> Writing config file"
 cat > $INSTALL_DIR/magic.xml <<EOF
 <magicmap>
- <magic name="JPEG" offset="0" target="\377\330\377"/> 
- <magic name="PNG" offset="0" target="\211PNG\r\n\032\n"/> 
+ <magic name="JPEG" offset="0" target="\377\330\377"/>
+ <magic name="PNG" offset="0" target="\211PNG\r\n\032\n"/>
 </magicmap>
 EOF
 
